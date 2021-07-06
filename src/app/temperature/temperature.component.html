@@ -4,3 +4,13 @@
 <!-- <button (click)="passValuetoParent()" type="button" > Convert Fahrenheit to Celcius</button> -->
 
 
+
+<h3>{{message}}</h3>
+
+<!-- F TO C <h3>{{(parentvaluetype-32)*5/9}}</h3> -->
+<input type="text" #box placeholder="value"/>
+<button (click)="getvalue(box.value)">Convert F to C</button>
+
+
+
+

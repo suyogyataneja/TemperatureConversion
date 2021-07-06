@@ -6,10 +6,20 @@ Enter Fahrenheit Value : <input [(ngModel)]="parentText" type="text" />
 
 Enter Celcius Value : <input [(ngModel)]="CelciusParentText" type="text" />
 
-
+{{childTextBoxvalue}}
 <!-- <p>Value of the child text box is {{newValue}}</p> -->
 <!-- <p>The value from the child component is </p> -->
 <app-temperature [parentvalue]="parentText" [ConversionParentValue]="CelciusParentText"
+(ontextfromchild)="updateValue($event)"
 ></app-temperature>
 
 <!-- WE CREATE  ConversionParentValue IN OUR CHILD COMPONENT  -->
+<!-- <h5>Using view child example</h5>
+<button type="button" (click)="increase()">Increase</button>
+<button type="button" (click)="decrease()">Decrease</button> -->
+
+
+<!-- <input type="text" (click)="celcius_conversion()" placeholder="Celcius to Fahrenheit"/> -->
+<!-- <input type="text" #box placeholder="value"/>
+<button (click)="getvalue(box.value)">Convert F to C</button> -->
+
